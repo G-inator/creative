@@ -3,9 +3,9 @@ var triangleArcColor;
 var triangleColor;
 var bottomCircleColor;
 
-var triangleArcX = 250;
-var triangleArcY = 150;
-var triangleArcD = 80;
+var triangleArcX;
+var triangleArcY;
+var triangleArcD = 50;
 var triangleArcStart = 0;
 var triangleArcStop;
 
@@ -18,7 +18,10 @@ function setup() {
 } 
 
 function draw() { 
-	background(bg);
+	//background(bg);
+  
+  triangleArcX = mouseX;
+  triangleArcY = mouseY;
   
   //arco del triangulo
   fill(triangleArcColor);
